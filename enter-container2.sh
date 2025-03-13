@@ -1,4 +1,3 @@
-docker exec -it container2 bash
-apt update && apt install -y iputils-ping
+#!/bin/bash
 
-ping container1
+docker exec -it container2 sh -c "ping container1"
